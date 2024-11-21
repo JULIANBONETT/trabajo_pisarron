@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="Agregar una nueva tarea..." maxlength="50">
+            <input type="checkbox" value="alta" id="pAlta">Alta Prioridad
+            <input type="checkbox" value="baja" id="pBaja">Baja Prioridad
+            <button id="add-task-button">Agregar</button>
+        </div>
+        <div class="priority-container">
+            <div class="priority-column" id="high-priority-column">
+                <h2> Tareas de Alta Prioridad</h2>
+                <ul id="high-priority-list"></ul>
+            </div>
+            <div class="priority-column" id="low-priority-column">
+                <h2>Tareas de Baja Prioridad</h2>
+                <ul id="low-priority-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>

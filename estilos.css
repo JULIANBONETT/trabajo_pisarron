@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6a00e3; /* Fondo de un solo color */
+    color: rgb(233, 231, 231); /* Cambiar el color del texto a blanco para mejor contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 30px;
+    background: rgb(2, 2, 2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.task-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.task-input input[type="checkbox"] {
+    accent-color: #dfdfdf; /* Color del checkbox */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #6f00ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.priority-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.priority-column {
+    flex: 1;
+    background: #fafafa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilos específicos para las columnas de prioridad */
+#high-priority-column h2 {
+    text-align: center;
+    color: #888888; /* Rojo para "Tareas de Alta Prioridad" */
+    margin-bottom: 10px;
+}
+
+#low-priority-column h2 {
+    text-align: center;
+    color: #888888; /* Verde para "Tareas de Baja Prioridad" */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #964bdc;
+    border-radius: 4px;
+    border: 1px solid #8a8989;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.delete-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #c0392b;
+}
